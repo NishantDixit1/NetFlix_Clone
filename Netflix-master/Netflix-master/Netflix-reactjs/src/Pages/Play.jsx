@@ -346,21 +346,22 @@ function Play() {
                   </button>
                 </div>
               </div>
-              <img
-                src={
-                  movieDetails.poster_path &&
-                  `${
-                    imageUrl +
-                    (window.innerWidth > 1024
-                      ? movieDetails.backdrop_path
-                        ? movieDetails.backdrop_path
-                        : "https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg"
-                      : movieDetails.poster_path)
-                  }`
-                }
-                className="w-40 rounded-sm lg:w-[45rem] ml-4 lg:ml-0"
-                alt=<img src="https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg" />
-              />
+             <img
+  src={
+    movieDetails.poster_path &&
+    `${
+      imageUrl +
+      (window.innerWidth > 1024
+        ? movieDetails.backdrop_path
+          ? movieDetails.backdrop_path
+          : "https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg"
+        : movieDetails.poster_path)
+    }`
+  }
+  className="w-40 rounded-sm lg:w-[45rem] ml-4 lg:ml-0"
+  alt="Thumbnail for a video"
+/>
+
             </div>
           </section>
 
